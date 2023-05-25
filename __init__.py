@@ -1,9 +1,9 @@
 
-from src.react.component import Component
+from react.component import Component
 
 from js import React as __React
 from typing import Any as __Any
-from src.react.case_converter import to_camel_case as __to_camel_case
+from react.case_converter import to_camel_case as __to_camel_case
 def __getattr__(attr: str):
         try:
                 return getattr(__React, attr)
